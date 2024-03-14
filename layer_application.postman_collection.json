@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "350e7c28-ff19-40e0-9114-cc1590aed75d",
+		"name": "layer_application",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33605737"
+	},
+	"item": [
+		{
+			"name": "127.0.0.1:8081/items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/items",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8081/item/A123",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8081/item/A123",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"item",
+						"A123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8081/item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sku",
+							"value": "Z113",
+							"type": "default"
+						},
+						{
+							"key": "name",
+							"value": "Nuevo",
+							"type": "default"
+						},
+						{
+							"key": "description",
+							"value": "Nuevo item en data",
+							"type": "default"
+						},
+						{
+							"key": "price",
+							"value": "11.25",
+							"type": "default"
+						},
+						{
+							"key": "quantity",
+							"value": "10",
+							"type": "default"
+						},
+						{
+							"key": "expireDate",
+							"value": "2024-10-28",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/item",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "127.0.0.1:8081/item/A123",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "127.0.0.1:8081/item/A123",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8081",
+					"path": [
+						"item",
+						"A123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
